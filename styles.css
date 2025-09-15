@@ -1,0 +1,45 @@
+/* 기본 선택자 */
+
+div {
+  background-color: rgb(164, 164, 232);
+  color: white;
+}
+
+#text-red{
+  color: rgb(226, 43, 156);
+}
+
+li.text-large{
+  font-size: 60px;
+}
+
+/* 결합 선택자 */
+div img{
+  width: 400px;
+}
+
+div>a{
+  color: white;
+}
+
+div p + a {
+  background-color: pink;
+}
+
+div p ~ a {
+  background-color: blue;
+}
+
+/* 가상 선택자 */
+.btn{
+  background-color: rgb(244, 6, 113);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(10, 132, 231);
+  border-radius: 5px;
+  cursor: pointer;
+}

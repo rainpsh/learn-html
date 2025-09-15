@@ -4,20 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>박성혜의 개인페이지</title>
+  <!-- 외부스타일 시트 -->
+   <link rel="stylesheet" href="./styles.css">
+  <!-- 내부스타일 시트 -->
+   <style>
+    strong {
+      background-color: rgb(148, 207, 207);
+
+    }
+   </style>
 </head>
 <body>
   Hello World!
+  <button type="button" class="btn">버튼</button>
   안녕하세요
   Hi
-  <div style="background-color: silver">
+  
     <p>p 태그입니다</p>
-    <strong>strong 태그입니다</strong><br>
+    <strong id="text-red">strong 태그입니다</strong><br>
     <strong>strong 태그입니다</strong>
     <hr>
-    <p>img태그 영역<br>
-      <img src="https://img.sbs.co.kr/newimg/news/20250701/202087000_500.jpg" alt="케이팝이미지" width="250"><br>
+    <div>
+      <p>img태그 영역<br>
+        <img src="https://img.sbs.co.kr/newimg/news/20250701/202087000_500.jpg" alt="케이팝이미지">
+      </p>
       <a href="https://www.naver.com" target="_blank">네이버</a>
-  </div>
+      <span>
+        <a href="">테스트</a>
+      </span>
+      <a href="">형제 태그입니다</a>
+    </div>
   <!-- 제목태그 -->
   <h1>
     <span style="color: blueviolet;">제목</span>입니다</h1>
@@ -31,9 +47,9 @@
   <h3>우리 강의에서 다루는 언어</h3>
   <!-- 순서가 없는 리스트-->
   <ul style="list-style-type:square;">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
+    <li class="text-large">HTML</li>
+    <li class="text-large">CSS</li>
+    <li class="text-large">JavaScript</li>
   </ul>
   <ul style="list-style-type:circle;">
     <li>HTML</li>
@@ -53,10 +69,12 @@
   </ol>
   <!-- form 요소들 -->
   <form action="">
-    <label for="user-id">ID</label>
+    <label for="user-id" class="text-large">ID</label>
     <br>
     <input type="text" id="user-id" name="user-id" placeholder="ID를 입력해주세요" required>
-    <p>Password</p>
+    <p></p>
+    <label for="user-password" class="text-large">Password</label>
+    <br>
     <input type="password" name="user-password" placeholder="패스워드를 입력해주세요" required>
     <!-- 제출버튼을 만드는 두가지 방법-->
     <br>
